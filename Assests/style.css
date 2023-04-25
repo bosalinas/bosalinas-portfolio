@@ -1,5 +1,8 @@
-
+*{
+    margin: 0;
+    padding: 0;
+}
 
 .image-text {
-    background-image: url(mountains-bg-image.jpg);
+    background-image: url("mountains-bg-image.jpg");
 }
