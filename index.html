@@ -1,68 +1,94 @@
 <!DOCTYPE html>
 <html lang="en-US">
 
-  <head>
+<head>
     <meta charset="UTF-8">
     <title>Bo Salinas-Portfolio</title>
     <link rel="stylesheet" href="./Assests/reset.css">
     <link rel="stylesheet" href="./Assests/style.css">
-  </head>
-  
-  <body>
+</head>
+
+<body>
     <header>
         <nav class="topnavbar">
             <a href="#about-me">About Me</a>
             <a href="#portfolio">Portfolio</a>
             <a href="#contact">Contact</a>
         </nav>
-    </header>    
-   
+    </header>
+
     <main>
         <section class="fixed-banner">
-            <h2>Bo Salinas<p>Web Developer in the making.</p></h2>
+            <h2>Bo Salinas</h2>
+            <p>Web Developer in the making.</p>
         </section>
 
-        <section id="about-me">
-            <h2>About Me</h2>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, 
-            eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam 
-            voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem 
-            sequi nesciunt. 
-            </p>
+        <section id="about-me" class="portfolio-container">
+            <h3>About Me</h3>
+            <div>
+                <img class= "mepicture" src="./Assests/Images/profile-image.png" alt="Picture of Bo Salinas">
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                        totam
+                        rem aperiam,
+                        eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                        explicabo.
+                        Nemo
+                        enim ipsam
+                        voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+                        eos
+                        qui
+                        ratione voluptatem
+                        sequi nesciunt.
+                    </p>
+            </div>
         </section>
 
-        <section id="portfolio-container">
-            <div class="portfolio-box">
-                <header>Company Website</header>
-                <img src="Assests/Images/companywebsite.jpg" alt="Example website on multiple devices"/>
-                <p>This is a quick description of a company website that I built. Please enjoy.</p>
-            </div>
-            <div class="portfolio-box">
-                <img src="Assests/Images/web-app.png" alt="Application on mobile device">
-                <p>This is a quick description of a company website that I built. Please enjoy.</p>
-            </div>
-            <div class="portfolio-box">
-                <img src="Assests/Images/web-development-team.png" alt="Employees at a table working">
-                <p>This is a quick description of a company website that I built. Please enjoy.</p>
+        <section id="portfolio" class="portfolio-container">
+            <h3>Portfolio</h3>
+            <div class="box-list">
+                <a href="https://github.com/bosalinas/bosalinas-portfolio" class="portfolio-box company">
+                    <div>
+                        <h4>Company Website</h4>
+                        <p>This is a quick description of a company website that I built. Please enjoy.</p>
+                    </div>
+                </a>
+
+                <a href="https://github.com/bosalinas/bosalinas-portfolio" class="portfolio-box app">
+                    <div>
+                        <h4>Responsive App</h4>
+                        <p>This is a quick description of a company website that I built. Please enjoy.</p>
+                    </div>
+                </a>
+                <a href="https://github.com/bosalinas/bosalinas-portfolio" class="portfolio-box creative">
+                    <div>
+                        <h4>Company Website</h4>
+                        <p>This is a quick description of a company website that I built. Please enjoy.</p>
+                    </div>
+                </a>
             </div>
         </section>
-  
+
         <section id="contact">
-            <h2>Contact Me</h2>
-            <ul>
-                <li><a href="https://www.linkedin.com/in/bosalinas/">LinkedIn</a></li>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="mailto: bo.salinas12@gmail.com">Email</a></li>
-            </ul>
+            <h3>Contact Me</h3>
+            <div class="socials">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/bosalinas/">LinkedIn</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="mailto: bo.salinas12@gmail.com">Email</a></li>
+                </ul>
+            </div>
         </section>
     </main>
-    
+
     <footer>
     </footer>
 </body>
+
 </html>
 
 
 
 
 
+/*<img src="./Assests/Images/profile-image.png" alt="picture of Bo Salinas" width="150px" height="100px"
+    border-radius="25px">*/
