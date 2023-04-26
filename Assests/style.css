@@ -12,13 +12,31 @@ body {
     flex-direction: column;
 }
 
-.portfolio-box {
-    border: 1px solid black;
-}
+main {
+    display: flex;
+    flex-direction: column;
+ }
+
+h2 {
+    font-size: 100px;
+    text-align: center;
+    vertical-align: middle;
+    /*background-color: rgba(255, 255, 255, 100);*/
+ }
+
+ .fixed-banner p {
+    font-size: 45px;
+    text-align: center;
+    vertical-align: middle;
+ }
 
 a {
     color: inherit;
     text-decoration: none;
+}
+
+.about-me {
+    display: flex;
 }
 
 .topnavbar {
@@ -38,7 +56,7 @@ a {
 }
 
 .topnavbar a:hover {
-    color: rgb(125, 184, 242);
+    color: rgb(139, 190, 241);
     text-decoration: none;
 }
 
@@ -47,9 +65,45 @@ a {
     height: 400px;
     margin: 0 auto;
     padding: 0px 20px;
-    background-image: url(/Assests/Images/mountains-bg-image-edit.jpg);
+    background-image: url(./Images/mountains-bg-image-edit.jpg);
     background-size: cover;
 
+}
+.portfolio-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;   
+    align-items: stretch;
+    margin: 1% 0;
+}
+
+.portfolio-container > h3 {
+    flex: 0 0 20%;
+    text-align: left;
+    font-size: 4vw;
+}
+
+.portfolio-container > div {
+    flex: 0 0 70%;
+}
+
+.portfolio-container > p {
+    text-align: right;
+    flex: 0 0 70%;
+}
+.box-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.portfolio-box {
+    border: 1px solid black;
+    border-radius: 30%x;
+    width: 300px;
+    height: 250px;
+    
 }
 
 .portfolio-box img {
@@ -59,8 +113,12 @@ a {
     border-radius: 30%;
 }
 
+.portfolio-box h3 {
+    justify-content: center;
+}
 
-#about-me {
+
+/*#about-me {
     background-color: rgb(37, 37, 37); 
     color: white;
     width: 100%;
@@ -68,7 +126,7 @@ a {
     margin: 0 auto;
     padding: 0px 20px;
 
-}
+}*/
 
 #portfolio {
     background-color: rgb(37, 37, 37); 
@@ -79,6 +137,30 @@ a {
     padding: 0px 20px;
 }
 
+.company {
+    background-image: url("../Assests/Images/companywebsite.jpg");
+    border-radius: 20%;
+    background-size: cover;
+}
+
+.app {
+    background-image: url("../Assests/Images/web-app.png");
+    border-radius: 20%;
+    background-size: cover;
+}
+
+.creative {
+    background-image: url("../Assests/Images/web-development-team.png");
+    border-radius: 20%;
+    background-size: cover;
+}
+
+.mepicture {
+    border-radius: 20%;
+    background-size: cover;
+    width: 150px;
+    height: 175px;
+}
 #contact {
     background-color: rgb(37, 37, 37); 
     color: white;
@@ -88,11 +170,3 @@ a {
     padding: 0px 20px;
 }
 
-
-.portfolio-container {
-    display: flex;
-}
-
-.portfolio-box {
-    flex: 0 0  100px;
-}
