@@ -8,7 +8,7 @@
 
 ![Final Version of web document PART 2 for screen larger than 1347px](./Assests/Images/bosalinas-portfolio-scrnshot2.png) 
 
-![Final Version of web document for under px]()
+![Final Version of web document small screen](./Assests/Images/bosalinas-portfolio-scrnshot3.png)
 
 ![Concept Art](/Assests/Images/concept-art-portfolio.png)
 

@@ -45,9 +45,11 @@ footer {
 
 #about-me {
     display: flex;
-    width: 100%;
-    height: 400px;
-    margin: 2% 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    margin: 50px auto;
 }
 
 .topnavbar {
@@ -55,6 +57,7 @@ footer {
     overflow: hidden;
     color: white;
     text-decoration: none;
+    width: 100%;
 }
 
 .topnavbar a {
@@ -100,7 +103,7 @@ footer {
 }
 
 .portfolio-container>p {
-    text-align: left;
+    text-align: center;
     flex: 0 0 50%;
     font-size: 20px;
     margin: 2% 0;
@@ -235,14 +238,16 @@ footer {
     background-color: rgb(37, 37, 37);
     color: white;
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     height: 200px;
     margin: 0 0;
 }
 
 @media screen and (max-width: 1345px) {
-    #contacts {
+    #contact {
         flex-direction: column;
+        flex-wrap: wrap;
     }
 
     .portfolio-container {
