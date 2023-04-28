@@ -10,8 +10,6 @@
 
 ![Final Version of web document small screen](./Assests/Images/bosalinas-portfolio-scrnshot3.png)
 
-![Github Published Page](https://bosalinas.github.io/bosalinas-portfolio/)
+[Github Published Page](https://bosalinas.github.io/bosalinas-portfolio/)
 
 ![Concept Art](/Assests/Images/concept-art-portfolio.png)
-
-![Github link](https://bosalinas.github.io/bosalinas-portfolio/)
