@@ -1,3 +1,5 @@
+
+/*universal attributes until they are overridden by specificity*/
 * {
     padding: 0;
     margin: 0;
@@ -29,6 +31,7 @@ h2 {
     vertical-align: middle;
 }
 
+/*All hyperlinks have no underline or color unless specificied*/
 a {
     color: inherit;
     text-decoration: none;
@@ -41,15 +44,6 @@ footer {
     display: flex;
     justify-content: center;
     flex: wrap;
-}
-
-#about-me {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 800px;
-    margin: 50px auto;
 }
 
 .topnavbar {
@@ -69,11 +63,13 @@ footer {
     text-decoration: none;
 }
 
+/*hover to know which nav item you're on*/
 .topnavbar a:hover {
     color: #40828d;
     text-decoration: none;
 }
 
+/*eye catchy image across the page*/
 .fixed-banner {
     width: 97.5%;
     height: 400px;
@@ -92,6 +88,7 @@ footer {
     margin: 1% 0;
 }
 
+/*portfolio-container is throughout the page to make things uniform*/
 .portfolio-container>h3 {
     text-align: left;
     padding: 1%;
@@ -160,57 +157,61 @@ footer {
     justify-content: center;
 }
 
-#portfolio {
-    background-color: rgb(37, 37, 37);
-    color: white;
-    display: flex;
-    width: 100%;
-    height: 400px;
-    margin: 0 0;
-}
-
 .company {
     background-image: url("../Assests/Images/companywebsite.jpg");
-    border-radius: 20%;
+    border-radius: 30px;
     background-size: cover;
     width: 325px;
     height: 275px;
 }
 
-.company:hover {
+/*Hover attributes to help the user know what they are about to click*/
+.company.app.creative:hover {
     background-image: linear-gradient(#e8f3f5, #40828d);
-    border-radius: 20%;
+    border-radius: 30px;
     background-size: cover;
     width: 325px;
     height: 275px;
+    overflow: hidden;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
 }
 
 .app {
     background-image: url("../Assests/Images/web-app.png");
-    border-radius: 20%;
+    border-radius: 30px;
     background-size: cover;
 }
 
 .app:hover {
     background-image: linear-gradient(#e8f3f5, #40828d);
-    border-radius: 20%;
     background-size: cover;
     width: 325px;
     height: 275px;
+    overflow: hidden;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
 }
 
 .creative {
     background-image: url("../Assests/Images/web-development-team.png");
-    border-radius: 20%;
+    border-radius: 30px;
     background-size: cover;
 }
 
 .creative:hover {
     background-image: linear-gradient(#e8f3f5, #40828d);
-    border-radius: 20%;
     background-size: cover;
     width: 325px;
     height: 275px;
+    overflow: hidden;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
 }
 
 .mepicture {
@@ -234,6 +235,24 @@ footer {
     height: 50px;
 }
 
+/*ID tags*/
+#portfolio {
+    background-color: rgb(37, 37, 37);
+    color: white;
+    display: flex;
+    width: 100%;
+    height: 400px;
+    margin: 0 0;
+}
+
+#about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    margin: 50px auto;
+}
 #contact {
     background-color: rgb(37, 37, 37);
     color: white;
@@ -243,7 +262,7 @@ footer {
     height: 200px;
     margin: 0 0;
 }
-
+/*Media Queries for smaller screens*/
 @media screen and (max-width: 1345px) {
     #contact {
         flex-direction: column;
