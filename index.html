@@ -3,86 +3,166 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Bo Salinas-Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bo Salinas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./Assests/reset.css">
     <link rel="stylesheet" href="./Assests/style.css">
 </head>
 
 <body>
     <header>
-        <nav class="topnavbar">
-            <a href="#about-me">About Me</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 m-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
     <main>
-        <section class="fixed-banner">
-            <h2>Bo Salinas</h2>
-            <p>Web Developer in the making.</p>
+        <section>
+            <div class="row">
+                <div class="col-md-6 gx-5 mb-4">
+                    <div class="bg-image hover-overlay ripple shadow-2-strong rounded-5" data-mdb-ripple-color="light">
+                        <img src="" class="img-fluid" />
+                        <a href="#!">
+                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 gx-5 mb-4">
+                    <h4><strong>Where I've been</strong></h4>
+                    <p class="text-muted">
+                        Hi, my name is Bo Salinas (they/them). I was born in California and raised in Texas. I worked in
+                        Special
+                        Education for a few years before starting this new challenge of becoming a web developer. I'm in
+                        the beginning of
+                        my journey to become an excellent web developer.
+                    </p>
+                    <p><strong>Where I'm going</strong></p>
+                    <p class="text-muted">
+                        In a nutshell, I want to create websites that help organizations address business challenges and
+                        meet
+                        their needs. I manage everything from website
+                        navigation and layout to a company's web hosting and security architecture.
+                    </p>
+                </div>
+            </div>
         </section>
 
-        <section id="about-me" class="portfolio-container">
-            <h3>About Me</h3>
-            <img class="mepicture" src="./Assests/Images/profile-image.png" alt="Picture of Bo Salinas">
-            <p> Hi, my name is Bo Salinas (they/them). I was born in California and raised in Texas. I worked in Special
-                Education
-                for a few years before starting this new challenge of becoming a web developer. I'm in the beginning of
-                my journey to become an excellent web developer.
-                In a nutshell, I want to create websites that help organizations address business challenges and meet
-                their needs. I manage everything from website
-                navigation and layout to a company's web hosting and security architecture.
-            </p>
-        </section>
+        <hr class="my-5" />
 
-        <section id="portfolio" class="portfolio-container portfolio">
+        <section class="portfolio container-fluid">
             <h3>Portfolio</h3>
-            <div class="box-list">
-                <a href="https://github.com/bosalinas/bosalinas-portfolio" class="portfolio-box company">
-                    <div>
-                        <h4>Company Website</h4>
-                        <p>This is a quick description of a company website that I built. Please enjoy.</p>
-                    </div>
-                </a>
-
-              <a href="https://gsdone-2f10065746b9.herokuapp.com/" class="portfolio-box app">
-                    <div>
-                        <h4>To-Do List App</h4>
-                        <p>Create a to-do after creating a profile.</p>
-                    </div>
-                </a>
-                <a href="https://codewizard-5cb0dd220207.herokuapp.com/" class="portfolio-box creative">
-                    <div>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <img src="" />
                         <h4>Code Wizard</h4>
-                        <p>Collaboratively created a quiz application for coders to test their knowledge.</p>
                     </div>
-                </a>
-                <a href="https://bosalinas.github.io/ShowBox/" class="portfolio-box website">
-                    <div>
-                        <h4>Movie Search Engine</h4>
-                        <p>A movie database website.</p>
+                    <div class="col">
+                        <img src="" />
+                        <h4>Yass Flix</h4>
                     </div>
-                </a>
+                    <div class="col">
+                        <img src="" />
+                        <h4>GSD</h4>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section id="contact" class="portfolio-container">
-            <h3>Contact Me</h3>
-            <div class="socials">
-                <img src="./Assests/Images/linkedin-logo-design-30.png" alt="linkedin logo">
-                <a href="https://www.linkedin.com/in/bosalinas/">LinkedIn</a>
-                <img src="./Assests/Images/icons8-github-250.png" alt="github">
-                <a href="#">Github</a>
-                <img src="./Assests/Images/icons8-gmail-logo-240.png" alt="Gmail logo">
-                <a href="mailto: bo.salinas12@gmail.com">Email</a>
-            </div>
+        <hr class="my-5" />
+
+        <section class="contact container-fluid">
+            social Media and git hub
         </section>
     </main>
 
-    <footer>
-        <p>Web Document Designed by Bo Salinas</p>
+    <footer class="footer container-fluid">
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
+
+<!-- <header>
+    <nav class="navbar fixed-top navbar-dark bg-dark">
+        <div class="container-fluid">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="navbar-brand" href="#">Bo Salinas</a><span></span>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about-me">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav> -->
+
+<!-- <div class="box-list">
+    <a href="https://codewizard-5cb0dd220207.herokuapp.com/" class="portfolio-box creative">
+        <div>
+            <h4>Code Wizard</h4>
+            <p>Collaboratively created a quiz application for coders to test their knowledge.</p>
+        </div>
+    </a>
+  <a href="https://gsdone-2f10065746b9.herokuapp.com/" class="portfolio-box app">
+        <div>
+            <h4>To-Do List App</h4>
+            <p>Create a to-do after creating a profile.</p>
+        </div>
+    </a>
+    <a href="https://bosalinas.github.io/ShowBox/" class="portfolio-box website">
+        <div>
+            <h4>Movie Search Engine</h4>
+            <p>A movie database website.</p>
+        </div>
+    </a>
+</div> -->
+
+<!-- <section class="landing container-fluid d-flex justify-content-center">
+    <h2>Bo Salinas</h2>
+    <h4>Front-end web developer</h4>
+</section>
+
+<section class="about container-fluid">
+    <h3>About Me</h3>
+    <img class="mepicture" src="">
+    <p> Hi, my name is Bo Salinas (they/them). I was born in California and raised in Texas. I worked in Special
+        Education
+        for a few years before starting this new challenge of becoming a web developer. I'm in the beginning of
+        my journey to become an excellent web developer.
+        In a nutshell, I want to create websites that help organizations address business challenges and meet
+        their needs. I manage everything from website
+        navigation and layout to a company's web hosting and security architecture.
+    </p>
+</section> -->
